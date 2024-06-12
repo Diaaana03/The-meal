@@ -3,7 +3,7 @@ Meal Finder is an app where you can discover different resipes. Website includes
 
 ## Built with 
 
-React: A JavaScript library for building user interfaces.
+*React: A JavaScript library for building user interfaces.
 create-react-app: A tool to set up a modern web app by running one command.
 react-dom: Provides DOM-specific methods that can be used at the top level of a web app to enable an efficient way of managing DOM elements.
 react-router-dom: A collection of navigational components that compose declaratively with your application.
