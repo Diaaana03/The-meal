@@ -16,7 +16,7 @@ Meal Finder is an app where you can discover different resipes. Website includes
 To set up the project locally, follow these steps:
 
 1. Clone the repository via command: 
-git clone 
+git clone https://github.com/Diaaana03/The-meal
 2. Install dependencies via command: 
 npm install
 3. Start the development server via command: 
