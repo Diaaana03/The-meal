@@ -48,14 +48,18 @@ export const Main = () => {
           <div className={classes.random__meal_text}>
             <h2 className={classes.random__meal_h2}>Meal of the Day</h2>
             <p className={classes.random__meal_title}>
-              {/* <Link to={`/meal/${meal.idMeal}`}>{meal.strMeal}</Link> */}
+              <Link to={`/meal/${meal.idMeal}`}>{meal.strMeal}</Link>
             </p>
             <p className={classes.random__meal_info}>
-              {/* {meal.strCategory} | {meal.strArea} */}
+              {meal.strCategory} | {meal.strArea}
             </p>
           </div>
           <div className={classes.random__meal_img}>
-            {/* <img src={meal.strMealThumb} alt={meal.strMeal} /> */}
+            <img
+              className={classes.random__meal_img}
+              src={meal.strMealThumb}
+              alt={meal.strMeal}
+            />
           </div>
         </section>
         <section className={classes.form}>
