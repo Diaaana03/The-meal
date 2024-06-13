@@ -11,6 +11,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Main />} />
         <Route path="/meal/:id" element={<Ingredients />} />
+        {/* <Route path="/meal/:idMeal" element={<Ingredients />} /> */}
       </Routes>
     </div>
   );

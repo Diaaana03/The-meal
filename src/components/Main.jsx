@@ -7,7 +7,7 @@ const randomURL = "https://www.themealdb.com/api/json/v1/1/random.php";
 const searchURL = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 
 export const Main = () => {
-  const [meal, setMeal] = useState(null);
+  const [meal, setMeal] = useState([]);
   const [searchTitle, setSearchTitle] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [noResults, setNoResults] = useState(false);
@@ -17,7 +17,6 @@ export const Main = () => {
       try {
         const response = await axios.get(randomURL);
         setMeal(response.data.meals[0]);
-        console.log(response.data);
       } catch (error) {
         console.log("Error fetching random meal:", error);
       }
@@ -48,7 +47,7 @@ export const Main = () => {
           <div className={classes.random__meal_text}>
             <h2 className={classes.random__meal_h2}>Meal of the Day</h2>
             <p className={classes.random__meal_title}>
-              <Link to={`/meal/${meal.idMeal}`}>{meal.strMeal}</Link>
+              <Link to={`/meal/${meal.idMeal || ""}`}>{meal.strMeal}</Link>
             </p>
             <p className={classes.random__meal_info}>
               {meal.strCategory} | {meal.strArea}
